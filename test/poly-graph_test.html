@@ -8,7 +8,7 @@
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../poly-graph.html">
+    <script type="module" src="../poly-graph.js"></script>
   </head>
   <body>
 
@@ -18,15 +18,16 @@
       </template>
     </test-fixture>
 
-    <script>
-      suite('poly-graph', function() {
+    <script type="module">
+import '../poly-graph.js';
+suite('poly-graph', function() {
 
-        test('instantiating the element works', function() {
-          var element = fixture('basic');
-          assert.equal(element.is, 'poly-graph');
-        });
+  test('instantiating the element works', function() {
+    var element = fixture('basic');
+    assert.equal(element.is, 'poly-graph');
+  });
 
-      });
-    </script>
+});
+</script>
   </body>
 </html>

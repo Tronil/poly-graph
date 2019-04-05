@@ -1,0 +1,16 @@
+{
+  "description": "Live or static timeseries and element graphing",
+  "name": "poly-graph",
+  "version": "1.0.0",
+  "main": "poly-graph.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/iron-resizable-behavior": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-component-page": "^4.0.0",
+    "@polymer/iron-demo-helpers": "^3.0.0",
+    "@polymer/paper-slider": "^3.0.0",
+    "wct-browser-legacy": "^1.0.1"
+  }
+}
